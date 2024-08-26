@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emilly Lemke</title>
+    <title>Viaja Net</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         header{
             background-color: #0164bf;
@@ -24,7 +25,6 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
-               
         }
         h1{
             font-family:'Times New Roman', Times, serif;
@@ -36,6 +36,10 @@
             text-align: center;
             font-size: 25px;
         }
+        h2#titulo-form{
+            color: #ff5e00;
+            text-shadow: grey 1px 1px 1px;
+        }
         #conteiner {
             display: flex;
             flex-wrap: wrap;
@@ -44,7 +48,7 @@
         }
         #conteiner>div{
             background-color:#011e7a;
-            height: 400px;
+            height: 420px;
             padding: 20px;
             font-size: 20px;
             width: 200px;
@@ -78,6 +82,37 @@
         p.legenda{
             font-size: 12px;
             text-align: center;
+        }
+        label{ 
+            margin-right: 10px;
+        }
+        #botao{ margin-bottom: 40px;}
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset {
+            width: 700px;
+        }
+        button{
+            border: #011e7a;
+            border-radius: 20px;
+            background-color: #011e7a;
+            color: white;
+            padding: 10px;
+            
+        }
+        .caixa{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #checkbox{
+            background-color: #d9d9f3;
+            border: 3px solid #ff5e00;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
         }
     </style>
 </head>
@@ -139,6 +174,29 @@
             <img src="chile.jpg" alt="Patagônia no Chile" width="200px">
             <p class="legenda">Patagônia no Chile</p>
         </div>
+    </div>
+    <h2 id="titulo-form">Saiba mais sobre os nossos pacotes de viagens</h2>
+    <form>
+        <input type="text" placeholder="Nome" name="Nome">
+        <input type="text" placeholder="Contato" name="Contato">
+    </form>
+    <div class="caixa">
+        <fieldset id="checkbox">
+            <legend>Interesses no(s) país(es):</legend>
+            <input type="checkbox" name="Interesses" id="Alemanha"><label for="Alemanha">Alemanha</label> <br>
+            <input type="checkbox" name="Interesses" id="Japao"><label for="Japao">Japão</label> <br>
+            <input type="checkbox" name="Interesses" id="Mexico"><label for="Mexico">México</label> <br>
+            <input type="checkbox" name="Interesses" id="Italia"><label for="Italia">Itália</label><br>
+            <input type="checkbox" name="Interesses" id="Thailandia"><label for="Thailandia">Thailândia</label> <br>
+            <input type="checkbox" name="Interesses" id="Estados Unidos"><label for="Estados Unidos">Estados Unidos</label> <br>
+            <input type="checkbox" name="Interesses" id="Africa"><label for="Africa">África do Sul</label> <br>
+            <input type="checkbox" name="Interesses" id="Chile"><label for="Chile">Chile</label> <br>
+        </fieldset>
+    </div>
+    <div class="caixa">
+        <form>
+            <button>Enviar</button>
+        </form>
     </div>
     <div id="c"></div>
         <a href="https://wa.me/5547996013847" id="em">WhatsApp</a>
